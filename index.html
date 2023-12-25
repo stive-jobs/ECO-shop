@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO shop</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img src="./img/site-icon/Logo.png" alt="site-logo" class="logo-site">
+                </div>
+
+                <div class="header-form">
+                    <form action="" class="form">
+                        <label for="search"><img src="./img/site-icon/search.svg" alt=""></label>
+                        <input type="search" id="search" placeholder="Search here...">
+                    </form>
+                    <div class="header-users">
+                        <div class="user"><img src="./img/site-icon/profile.svg" alt=""></div>
+                        <div class="shop-bag"><img src="./img/site-icon/bag.svg" alt=""></div>
+                    </div>
+                </div>
+
+                <nav class="header-nav">
+                    <a href="" class="header-nav_link">NEW!</a>
+                    <a href="" class="header-nav_link">Clothing</a>
+                    <a href="" class="header-nav_link">Bath</a>
+                    <a href="" class="header-nav_link">Bedding</a>
+                    <a href="" class="header-nav_link">Home Goods</a>
+                    <a href="" class="header-nav_link">Furniture</a>
+                    <a href="" class="header-nav_link">Footwear</a>
+                    <a href="" class="header-nav_link">Accesories</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="header-banner">
+            <div class="container">
+                <div class="banner-wrappr swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide banner-catalog">
+                            <div class="banner-catalog-info">
+                                <h2 class="catalog-info_title">Healthy cutlery, healthy body</h2>
+                                <p class="catalog-info_text">Upgrade your dining experience and
+                                    begin your path to a healthy you right now.
+                                </p>
+                                <button class="catalog-info-btn">Learn More</button>
+                            </div>
+                            <div class="banner-image">
+                                <img src="./img/table-with-lunch-things-lunchbox-cup-tableware-greenery-top-view 1.png"alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide banner-catalog">
+                            <div class="banner-image">
+                                <img src="./img/image 1005.png"alt="">
+                            </div>
+                            <div class="banner-catalog2-info">
+                                <h2 class="catalog2-info_title">Get 15% off</h2>
+                                <p class="catalog2-info_text">on your initial purchase of our chosen products
+                                </p>
+                                <span class="catalog2-info-btn">Learn More</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

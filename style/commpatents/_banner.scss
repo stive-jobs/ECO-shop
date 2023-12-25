@@ -1,0 +1,122 @@
+.header-banner {
+    margin-top: 10px;
+    height: 70vh;
+
+}
+
+.banner-catalog {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+
+    &-info {
+        width: 50%;
+        text-align: center;
+
+        .catalog-info_title {
+            color: #333;
+            text-align: center;
+
+            /* Heading 1 */
+            font-family: Libre Baskerville;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+.catalog-info_text {
+    color: var(--Grey-500, #666);
+    text-align: center;
+
+    /* Body Large Regular */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    padding-block: 24px;
+}
+
+.catalog-info-btn {
+    padding: 12px 24px;
+    align-items: center;
+    border-radius: 40px;
+    background: var(--Primary, #658C4A);
+    // text
+
+    color: var(--White, #FFF);
+    text-align: center;
+
+    /* Body Large Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+}
+
+.banner-catalog2-info {
+    width: 388px;
+
+}
+
+.catalog2-info_title {
+    color: var(--Grey-600, #333);
+    text-align: center;
+
+    /* Heading 5 */
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.catalog2-info_text {
+    color: var(--Grey-600, #333);
+    text-align: center;
+
+    /* Body Large Regular */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    padding-block: 16px;
+}
+
+.catalog2-info-btn {
+    color: var(--Primary, #658C4A);
+    display: block;
+    text-align: center;
+    /* Body Large Semibold */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 140% */
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        z-index: -1;
+        border-radius: 40px;
+        background: var(--Secondary, #E7CEC0);
+    }
+}
