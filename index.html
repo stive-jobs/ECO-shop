@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
@@ -38,7 +40,7 @@
                 </div>
 
                 <nav class="header-nav">
-                    <a href="" class="header-nav_link">NEW!</a>
+                    <a href="" class="header-nav_link">NEW</a>
                     <a href="" class="header-nav_link">Clothing</a>
                     <a href="" class="header-nav_link">Bath</a>
                     <a href="" class="header-nav_link">Bedding</a>
@@ -55,40 +57,71 @@
             <div class="container">
                 <div class="banner-wrappr swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide banner-catalog">
+                        <div class="swiper-slide banner-catalog ">
+                            <div class="image-br">
+                                <img src="./img/bnner.png" alt="">
+                            </div>
                             <div class="banner-catalog-info">
-                                <h2 class="catalog-info_title">Healthy cutlery, healthy body</h2>
+                                <h2 class="catalog-info_title" >Healthy cutlery, healthy body</h2>
                                 <p class="catalog-info_text">Upgrade your dining experience and
                                     begin your path to a healthy you right now.
                                 </p>
                                 <button class="catalog-info-btn">Learn More</button>
                             </div>
-                            <div class="banner-image">
-                                <img src="./img/table-with-lunch-things-lunchbox-cup-tableware-greenery-top-view 1.png"alt="">
-                            </div>
                         </div>
-                        <div class="swiper-slide banner-catalog">
-                            <div class="banner-image">
-                                <img src="./img/image 1005.png"alt="">
+                        <div class="swiper-slide banner-catalog2-info flex items-center gap-[24px] p-4">
+                            <div class="image-br">
+                                <img src="./img/image 1005.png" alt="">
                             </div>
                             <div class="banner-catalog2-info">
                                 <h2 class="catalog2-info_title">Get 15% off</h2>
-                                <p class="catalog2-info_text">on your initial purchase of our chosen products
-                                </p>
-                                <span class="catalog2-info-btn">Learn More</span>
+                                <p class="catalog2-info_text">on your initial purchase of our chosen products</p>
+                                <button class="catalog2-info-btn">Shop Now</button>
                             </div>
+                            
                         </div>
                     </div>
+                    <div class="swiper-button-next "></div>
+                    <div class="swiper-button-prev "></div>
                     <div class="swiper-pagination"></div>
+                </div>
+                <div class="grid-catalog">
+                    <div class="grid-items1">
+                        <img src="./img/image 999.png" class="image-positions" alt="" style="position: relative;">
+                        <!-- <span class="grid-catalog-info" style="position: absolute;">Clothing</span> -->
+                    </div>
+                    <div class="grid-items2">
+                        <img src="./img/image 1000.png" class="image-positions2" alt="">
+                        <!-- <span class="grid-catalog-info">Clothing</span> -->
+                    </div>
+                    <div class="grid-items3">
+                        <img src="./img/image 1003.png" class="image-positions3" alt="">
+                        <!-- <span class="grid-catalog-info">Clothing</span> -->
+                    </div>
+                    <div class="grid-items4">
+                        <img src="./img/image 1002.png" class="image-positions4" alt="">
+                        <!-- <span class="grid-catalog-info">Clothing</span> -->
+                    </div>
+                    <div class="grid-items5">
+                        <img src="./img/image 1001.png" class="image-positions5" alt="">
+                        <!-- <span class="grid-catalog-info">Clothing</span> -->
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             pagination: {
                 el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>

@@ -7,6 +7,7 @@
 .banner-catalog {
     display: flex !important;
     align-items: center;
+    flex-direction: row-reverse;
     justify-content: center;
     column-gap: 30px;
 
@@ -16,7 +17,7 @@
 
         .catalog-info_title {
             color: #333;
-            text-align: center;
+            text-align: left;
 
             /* Heading 1 */
             font-family: Libre Baskerville;
@@ -30,7 +31,7 @@
 
 .catalog-info_text {
     color: var(--Grey-500, #666);
-    text-align: center;
+    text-align: left;
 
     /* Body Large Regular */
     font-family: Inter;
@@ -44,7 +45,8 @@
 
 .catalog-info-btn {
     padding: 12px 24px;
-    align-items: center;
+    position: absolute;
+    left: 0;
     border-radius: 40px;
     background: var(--Primary, #658C4A);
     // text
